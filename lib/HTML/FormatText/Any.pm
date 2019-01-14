@@ -38,6 +38,11 @@ _
         },
         # XXX option to customize order of backends
     },
+    links => [
+        {url => 'prog:html2text', summary => 'CLI for this module'},
+        {url => 'prog:html2txt', summary => 'a simpler HTML rendering utility which basically just strips HTML tags from HTML source code'},
+    ],
+    'cmdline.skip_format' => 1,
 };
 sub html2text {
     require File::Which;
@@ -110,9 +115,5 @@ sub html2text {
 
 1;
 # ABSTRACT:
-
-=head1 SEE ALSO
-
-L<CPAN::Module::FromURL>
 
 =cut
